@@ -43,7 +43,7 @@ namespace ConsoleApplication1
 on a new line! ""Wow!"", the masses cried";
 
             Console.WriteLine(bazString);
-            
+
             Console.BackgroundColor = ConsoleColor.Magenta;
             Console.ForegroundColor = ConsoleColor.White;
 
@@ -53,14 +53,15 @@ on a new line! ""Wow!"", the masses cried";
 
             string str = "T-Systems";
 
-            Console.SetCursorPosition((int)w/2-(int)(str.Length/2), (int)h/2);
+            Console.SetCursorPosition((int)w / 2 - (int)(str.Length / 2), (int)h / 2);
             Console.WriteLine("T-Systems\n");
 
             Console.Read();
-            Console.SetWindowSize(w / 2+5, h / 2);
+            Console.SetWindowSize(w / 2 + 5, h / 2);
             Console.WriteLine("A program argumentumai: ");
-            
-            for (int i = 0; i < args.Length; i++) {
+
+            for (int i = 0; i < args.Length; i++)
+            {
                 Console.WriteLine("args[" + i + "]: " + args[i]);
             }
 
@@ -75,7 +76,8 @@ on a new line! ""Wow!"", the masses cried";
             int[] y = { 9000, 1000, 1337 };
 
             // Indexing an array - Accessing an element
-            for (int i = 0; i < y.Length; i++) {
+            for (int i = 0; i < y.Length; i++)
+            {
                 Console.WriteLine("y[" + i + "]: " + y[i]);
             }
             // Arrays are mutable.
@@ -95,8 +97,9 @@ on a new line! ""Wow!"", the masses cried";
             // A value must be added before accessing the index
             intList.Add(1);
             Console.WriteLine("intList @ 0: " + intList[0]);
-            for (int i = 0; i < 10; i++) {
-                intList.Add(i);   
+            for (int i = 0; i < 10; i++)
+            {
+                intList.Add(i);
             }
             Console.WriteLine("intList after adding elements: (foreach)");
             foreach (var item in intList)
@@ -109,8 +112,15 @@ on a new line! ""Wow!"", the masses cried";
             {
                 Console.WriteLine(item);
             }
-            Console.WriteLine("Greatest element of this list: "+intList.Max());
+            Console.WriteLine("Greatest element of this list: " + intList.Max());
 
-            
+
+            ConsoleKeyInfo key;
+
+            do {
+                key = Console.ReadKey();
+
+            } while (key.Key != ConsoleKey.Escape);
+        }
     }
 }

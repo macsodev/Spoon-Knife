@@ -13,3 +13,4 @@ Projekten belül amiket megnéztem:
 - változók felvétele
 - stringformázás
 - dátumkiíratás (DateTime)
+- lista kezelés
