@@ -117,9 +117,11 @@ on a new line! ""Wow!"", the masses cried";
 
             ConsoleKeyInfo key;
 
+            Console.WriteLine("To exit, press Esc key...");
             do {
-                key = Console.ReadKey();
-
+                
+                key = Console.ReadKey(true);
+                
             } while (key.Key != ConsoleKey.Escape);
         }
     }
