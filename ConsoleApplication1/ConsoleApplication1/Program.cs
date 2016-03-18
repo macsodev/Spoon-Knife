@@ -57,6 +57,60 @@ on a new line! ""Wow!"", the masses cried";
             Console.WriteLine("T-Systems\n");
 
             Console.Read();
-        }
+            Console.SetWindowSize(w / 2+5, h / 2);
+            Console.WriteLine("A program argumentumai: ");
+            
+            for (int i = 0; i < args.Length; i++) {
+                Console.WriteLine("args[" + i + "]: " + args[i]);
+            }
+
+
+            // Arrays - zero indexed
+            // The array size must be decided upon declaration
+            // The format for declaring an array is follows:
+            // <datatype>[] <var name> = new <datatype>[<array size>];
+            int[] intArray = new int[10];
+
+            // Another way to declare & initialize an array
+            int[] y = { 9000, 1000, 1337 };
+
+            // Indexing an array - Accessing an element
+            for (int i = 0; i < y.Length; i++) {
+                Console.WriteLine("y[" + i + "]: " + y[i]);
+            }
+            // Arrays are mutable.
+            intArray[1] = 1;
+
+
+            // Lists
+            // Lists are used more frequently than arrays as they are more flexible
+            // The format for declaring a list is follows:
+            // List<datatype> <var name> = new List<datatype>();
+            List<int> intList = new List<int>();
+            List<string> stringList = new List<string>();
+            List<int> z = new List<int> { 9000, 1000, 1337 }; // initialize
+            // The <> are for generics - Check out the cool stuff section
+
+            // Lists don't default to a value;
+            // A value must be added before accessing the index
+            intList.Add(1);
+            Console.WriteLine("intList @ 0: " + intList[0]);
+            for (int i = 0; i < 10; i++) {
+                intList.Add(i);   
+            }
+            Console.WriteLine("intList after adding elements: (foreach)");
+            foreach (var item in intList)
+            {
+                Console.WriteLine(item);
+            }
+            intList.Reverse();
+            Console.WriteLine("intList after reversing order of elements:");
+            foreach (var item in intList)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine("Greatest element of this list: "+intList.Max());
+
+            
     }
 }
