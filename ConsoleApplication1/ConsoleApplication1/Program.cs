@@ -43,13 +43,20 @@ namespace ConsoleApplication1
 on a new line! ""Wow!"", the masses cried";
 
             Console.WriteLine(bazString);
-
+            
             Console.BackgroundColor = ConsoleColor.Magenta;
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.Clear();
+            int h = Console.WindowHeight;
+            int w = Console.WindowWidth;
 
+            string str = "T-Systems";
+
+            Console.SetCursorPosition((int)w/2-(int)(str.Length/2), (int)h/2);
             Console.WriteLine("T-Systems\n");
+
+            Console.Read();
         }
     }
 }
