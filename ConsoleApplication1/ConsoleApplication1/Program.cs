@@ -35,6 +35,21 @@ namespace ConsoleApplication1
             string fooFs = string.Format("Check Check, {0} {1}, {0} {1:0.0}", 1, 2);
             Console.WriteLine(fooFs);
 
+            DateTime fooDate = DateTime.Now;
+            Console.WriteLine(fooDate.ToString("yyyy MMMM dd, hh:mm"));
+
+            // You can split a string over two lines with the @ symbol. To escape " use ""
+            const string bazString = @"Here's some stuff
+on a new line! ""Wow!"", the masses cried";
+
+            Console.WriteLine(bazString);
+
+            Console.BackgroundColor = ConsoleColor.Magenta;
+            Console.ForegroundColor = ConsoleColor.White;
+
+            Console.Clear();
+
+            Console.WriteLine("T-Systems\n");
         }
     }
 }
