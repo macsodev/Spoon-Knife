@@ -34,7 +34,7 @@ namespace ConsoleApplication1
             // Formatting, based on sprintf
             string fooFs = string.Format("Check Check, {0} {1}, {0} {1:0.0}", 1, 2);
             Console.WriteLine(fooFs);
-
+            //checkout
             DateTime fooDate = DateTime.Now;
             Console.WriteLine(fooDate.ToString("yyyy MMMM dd, hh:mm"));
 
