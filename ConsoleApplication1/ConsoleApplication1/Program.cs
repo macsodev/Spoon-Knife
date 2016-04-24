@@ -30,7 +30,7 @@ namespace ConsoleApplication1
             string fooString = "\"escape\" quotes and add \n (new lines) and \t (tabs)";
             Console.WriteLine(fooString);
 
-
+            //randomszar
             // Formatting, based on sprintf
             string fooFs = string.Format("Check Check, {0} {1}, {0} {1:0.0}", 1, 2);
             Console.WriteLine(fooFs);
