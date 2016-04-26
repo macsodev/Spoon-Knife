@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ### Hello világ!
+=======
+### The Spoon-Knife Repository
+>>>>>>> origin/change-the-title
 
 Ezeket csináltam eddig (Git & VS2015u1):
 
